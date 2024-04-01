@@ -2,9 +2,8 @@ import axios from "axios";
 
 
 const http=axios.create({
- //通用请求的地址前缀
- baseURL:'/api',
- timeout:10000,
+ baseURL:'/api',//通用请求的地址前缀
+ timeout:10000,//最大请求时间，若后端没有响应，终止请求
 })
 
 // 添加请求拦截器
